@@ -1,6 +1,8 @@
 ((class_decl
-   [(class_name) (module_type_parameters) (superclass)] @cursor) @endable @indent (#endwise! "end"))
+   name: (_) @cursor) @endable @indent (#endwise! "end"))
+((class_decl
+   name: (_) @cursor superclass: (_) @cursor) @endable @indent (#endwise! "end"))
 ((module_decl
-   [(module_name) (module_type_parameters) (self_type_binds)] @cursor) @endable @indent (#endwise! "end"))
+   name: (_) @cursor) @endable @indent (#endwise! "end"))
 ((interface_decl
-   [(interface_name) (module_type_parameters)] @cursor) @endable @indent (#endwise! "end"))
+   name: (_) @cursor type_parameters: (_)? @cursor) @endable @indent (#endwise! "end"))
